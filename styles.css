@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #64B5F6, #7986CB);
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s, background-color 0.5s;
+    transform-origin: center;
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  .card-face.front {
+    background-color: #ddd;
+    animation: pulse 1s ease-in-out; 
+  }
+  
+  .card-face.back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched .card-face {
+    background-color: #8eff8e;
+    cursor: default;
+    animation: pulseGreen 1s ease-in-out, fadeIn 1s ease-in-out 0.5s;
+  }
+  
+  .game-over {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 2s;
+  }
+  
+  /* Hover effect for cards */
+  .card:not(.flipped):hover {
+    filter: brightness(1.1);
+  }
+  .logo-text {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }  
+  
+  /* Animation for pulse effect */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Animation for pulse effect with green color */
+  @keyframes pulseGreen {
+    0%, 100% { background-color: #8eff8e; transform: scale(1); }
+    50% { background-color: #8eff8e; transform: scale(1.1); }
+  }
+  
+  /* Animation for fadeIn effect */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
