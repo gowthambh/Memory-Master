@@ -19,4 +19,6 @@ Challenge your memory with the Memory Card Game! Uncover pairs of cards with hid
 
 Enjoy the Memory Card Game, a delightful and challenging way to test and improve your memory skills!
 
-![image](https://github.com/gowthambh/Memory-Master/assets/89744604/2036df09-c1c7-4a6f-b025-358a969e62a9)
+![image](https://github.com/gowthambh/Memory-Master/assets/89744604/0ef247a9-3044-4786-9e53-9371f276f5e9)
+![image](https://github.com/gowthambh/Memory-Master/assets/89744604/7744518f-a69d-40de-a61c-ec205f08cb30)
+
