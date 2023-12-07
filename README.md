@@ -18,3 +18,5 @@ Challenge your memory with the Memory Card Game! Uncover pairs of cards with hid
 5. Experience a fun "Game Over" animation when all pairs are found, followed by an automatic restart.
 
 Enjoy the Memory Card Game, a delightful and challenging way to test and improve your memory skills!
+
+![image](https://github.com/gowthambh/Memory-Master/assets/89744604/2036df09-c1c7-4a6f-b025-358a969e62a9)
